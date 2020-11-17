@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmlt.kaifa.mapper.UserInfoMapper">
+    <resultMap id="userResultMap" type="com.jmlt.kaifa.entity.UserInfo" >
+        <result column="id" property="id" />
+        <result column="serial_number" property="serialNumber" />
+        <result column="confirm_time" property="confirmTime" />
+        <result column="is_target" property="isTarget" />
+        <result column="is_consent" property="isConsent" />
+
+    </resultMap>
+    <select id="findById" resultMap="userResultMap">
+        select * from user_info  where id = #{id}
+    </select>
+
+    <select id="findBySerialNumber" resultMap="userResultMap">
+        select * from user_info  where serial_number = #{serialNumber}
+    </select>
+
+    <select id="findAll" resultMap="userResultMap">
+        select * from user_info
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyColumn="id" keyProperty="id" >
+		INSERT INTO user_info(
+        id,
+        serial_number,
+        confirm_time,
+        is_target,
+       is_consent
+
+		) VALUES (
+			#{id},
+			#{serialNumber},
+			#{confirmTime},
+			#{isTarget},
+			#{isConsent}
+
+		)
+	</insert>
+
+
+    <update id="update">
+		UPDATE user_info
+		<set>
+            <if test="confirmTime != null and confirmTime != ''">
+                confirm_time = #{confirmTime},
+           </if>
+            <if test="isTarget != null and isTarget != ''">
+                is_target = #{isTarget},
+            </if>
+            <if test="isConsent != null and isConsent != ''">
+                 is_consent = #{isConsent}
+            </if>
+        </set>
+		WHERE serial_number = #{serialNumber}
+	</update>
+
+
+</mapper>

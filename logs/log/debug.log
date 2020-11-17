@@ -1,0 +1,492 @@
+2020-11-17 15:11:19 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:105) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-11-17 15:11:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.Msg matches criteria [is assignable to Object]
+2020-11-17 15:11:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.StockUser matches criteria [is assignable to Object]
+2020-11-17 15:11:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.TMsg matches criteria [is assignable to Object]
+2020-11-17 15:11:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.UserInfo matches criteria [is assignable to Object]
+2020-11-17 15:11:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.VisitLog matches criteria [is assignable to Object]
+2020-11-17 15:11:44 下午 [Thread: http-nio-8080-exec-1][ Class:java.lang.Class >> Method: com.jmlt.kaifa.controller.SearchController.findByNumber(SearchController.java:44) ]
+INFO:--------weather getlist begin-------
+2020-11-17 15:11:44 下午 [Thread: http-nio-8080-exec-1][ Class:java.lang.Class >> Method: com.jmlt.kaifa.controller.SearchController.findByNumber(SearchController.java:45) ]
+ERROR:--------- Create log4j's error file in test------
+2020-11-17 15:11:44 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:11:44 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6109759d] was not registered for synchronization because synchronization is not active
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@1279333247 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: INSERT INTO visit_log( ip_id, client_ip, visit_time, serial_number ) VALUES ( ?, ?, ?, ? )
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: null, 10.116.204.80(String), 20201117151144(String), 15014343530(String)
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6109759d]
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22874340] was not registered for synchronization because synchronization is not active
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@1172405155 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from stock_user where serial_number = ?
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22874340]
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cc3d7aa] was not registered for synchronization because synchronization is not active
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@356753585 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cc3d7aa]
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b137d39] was not registered for synchronization because synchronization is not active
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@694396078 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: UPDATE user_info SET is_target = ? WHERE serial_number = ?
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 1(String), 15014343530(String)
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 15:11:47 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b137d39]
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:java.lang.Class >> Method: com.jmlt.kaifa.controller.SearchController.findByNumber(SearchController.java:44) ]
+INFO:--------weather getlist begin-------
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:java.lang.Class >> Method: com.jmlt.kaifa.controller.SearchController.findByNumber(SearchController.java:45) ]
+ERROR:--------- Create log4j's error file in test------
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54228ba2] was not registered for synchronization because synchronization is not active
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@1524989782 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: INSERT INTO visit_log( ip_id, client_ip, visit_time, serial_number ) VALUES ( ?, ?, ?, ? )
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: null, 10.116.204.80(String), 20201117151213(String), 15014343530(String)
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54228ba2]
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5be7822f] was not registered for synchronization because synchronization is not active
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@705251786 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from stock_user where serial_number = ?
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5be7822f]
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf78a22] was not registered for synchronization because synchronization is not active
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@484870537 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf78a22]
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38d8aedf] was not registered for synchronization because synchronization is not active
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@2142868860 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: UPDATE user_info SET is_target = ? WHERE serial_number = ?
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 1(String), 15014343530(String)
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 15:12:13 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38d8aedf]
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f5c74e0] was not registered for synchronization because synchronization is not active
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@725653364 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f5c74e0]
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a3f15d3] was not registered for synchronization because synchronization is not active
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@112755968 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: UPDATE user_info SET confirm_time = ?, is_target = ?, is_consent = ? WHERE serial_number = ?
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 20201117151243(String), 1(String), 1(String), 15014343530(String)
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 15:12:43 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a3f15d3]
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:java.lang.Class >> Method: com.jmlt.kaifa.controller.SearchController.findByNumber(SearchController.java:44) ]
+INFO:--------weather getlist begin-------
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:java.lang.Class >> Method: com.jmlt.kaifa.controller.SearchController.findByNumber(SearchController.java:45) ]
+ERROR:--------- Create log4j's error file in test------
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60ed176d] was not registered for synchronization because synchronization is not active
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@1848304896 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: INSERT INTO visit_log( ip_id, client_ip, visit_time, serial_number ) VALUES ( ?, ?, ?, ? )
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: null, 10.116.204.80(String), 20201117151401(String), 15014343530(String)
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60ed176d]
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2749d3cb] was not registered for synchronization because synchronization is not active
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@519184583 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from stock_user where serial_number = ?
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2749d3cb]
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f381074] was not registered for synchronization because synchronization is not active
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@637945299 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f381074]
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fcac79d] was not registered for synchronization because synchronization is not active
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@463307381 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: UPDATE user_info SET is_target = ? WHERE serial_number = ?
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 1(String), 15014343530(String)
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 15:14:01 下午 [Thread: http-nio-8080-exec-8][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fcac79d]
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f5e8f38] was not registered for synchronization because synchronization is not active
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@996219915 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f5e8f38]
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67e1981b] was not registered for synchronization because synchronization is not active
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@436338865 wrapping com.mysql.cj.jdbc.ConnectionImpl@51a64619] will not be managed by Spring
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: UPDATE user_info SET confirm_time = ?, is_consent = ? WHERE serial_number = ?
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 20201117151403(String), 0(String), 15014343530(String)
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 15:14:03 下午 [Thread: http-nio-8080-exec-9][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67e1981b]
+2020-11-17 15:22:10 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:105) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-11-17 15:22:10 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.Msg matches criteria [is assignable to Object]
+2020-11-17 15:22:10 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.StockUser matches criteria [is assignable to Object]
+2020-11-17 15:22:10 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.TMsg matches criteria [is assignable to Object]
+2020-11-17 15:22:10 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.UserInfo matches criteria [is assignable to Object]
+2020-11-17 15:22:10 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.VisitLog matches criteria [is assignable to Object]
+2020-11-17 15:22:28 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:22:28 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c17eb3d] was not registered for synchronization because synchronization is not active
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@820862169 wrapping com.mysql.cj.jdbc.ConnectionImpl@46baad44] will not be managed by Spring
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: INSERT INTO visit_log( ip_id, client_ip, visit_time, serial_number ) VALUES ( ?, ?, ?, ? )
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: null, 10.116.204.80(String), 20201117152228(String), 15014343540(String)
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c17eb3d]
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f767eaa] was not registered for synchronization because synchronization is not active
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@963916084 wrapping com.mysql.cj.jdbc.ConnectionImpl@46baad44] will not be managed by Spring
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from stock_user where serial_number = ?
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343540(String)
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f767eaa]
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@649cdad] was not registered for synchronization because synchronization is not active
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@106844483 wrapping com.mysql.cj.jdbc.ConnectionImpl@46baad44] will not be managed by Spring
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343540(String)
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@649cdad]
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12cd516f] was not registered for synchronization because synchronization is not active
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@1317423790 wrapping com.mysql.cj.jdbc.ConnectionImpl@46baad44] will not be managed by Spring
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: UPDATE user_info SET is_target = ? WHERE serial_number = ?
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 1(String), 15014343540(String)
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 15:22:30 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12cd516f]
+2020-11-17 16:13:13 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:105) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-11-17 16:13:13 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.Msg matches criteria [is assignable to Object]
+2020-11-17 16:13:13 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.StockUser matches criteria [is assignable to Object]
+2020-11-17 16:13:13 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.TMsg matches criteria [is assignable to Object]
+2020-11-17 16:13:13 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.UserInfo matches criteria [is assignable to Object]
+2020-11-17 16:13:13 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.VisitLog matches criteria [is assignable to Object]
+2020-11-17 16:13:54 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:105) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-11-17 16:13:54 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.Msg matches criteria [is assignable to Object]
+2020-11-17 16:13:54 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.StockUser matches criteria [is assignable to Object]
+2020-11-17 16:13:54 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.TMsg matches criteria [is assignable to Object]
+2020-11-17 16:13:54 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.UserInfo matches criteria [is assignable to Object]
+2020-11-17 16:13:54 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.VisitLog matches criteria [is assignable to Object]
+2020-11-17 16:14:59 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 16:14:59 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51aeb44] was not registered for synchronization because synchronization is not active
+2020-11-17 16:15:01 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@1762420467 wrapping com.mysql.cj.jdbc.ConnectionImpl@3516550e] will not be managed by Spring
+2020-11-17 16:15:01 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 16:15:01 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343540(String)
+2020-11-17 16:15:01 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 16:15:01 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51aeb44]
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7581219e] was not registered for synchronization because synchronization is not active
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@2068238686 wrapping com.mysql.cj.jdbc.ConnectionImpl@3516550e] will not be managed by Spring
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: INSERT INTO visit_log( ip_id, client_ip, visit_time, serial_number ) VALUES ( ?, ?, ?, ? )
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: null, 10.116.204.80(String), 20201117161544(String), 15014343530(String)
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.VisitLogMapper.insert >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7581219e]
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3063f27d] was not registered for synchronization because synchronization is not active
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@1420658184 wrapping com.mysql.cj.jdbc.ConnectionImpl@3516550e] will not be managed by Spring
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from stock_user where serial_number = ?
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.StockUserMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3063f27d]
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46326a69] was not registered for synchronization because synchronization is not active
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@1777174728 wrapping com.mysql.cj.jdbc.ConnectionImpl@3516550e] will not be managed by Spring
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46326a69]
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68a74ebd] was not registered for synchronization because synchronization is not active
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@762153698 wrapping com.mysql.cj.jdbc.ConnectionImpl@3516550e] will not be managed by Spring
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: UPDATE user_info SET is_target = ? WHERE serial_number = ?
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 1(String), 15014343530(String)
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 16:15:44 下午 [Thread: http-nio-8080-exec-3][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68a74ebd]
+2020-11-17 16:15:48 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 16:15:48 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@645e623f] was not registered for synchronization because synchronization is not active
+2020-11-17 16:15:48 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@1788448964 wrapping com.mysql.cj.jdbc.ConnectionImpl@3516550e] will not be managed by Spring
+2020-11-17 16:15:48 下午 [Thread: http-nio-8080-exec-4][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 16:15:48 下午 [Thread: http-nio-8080-exec-4][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 16:15:48 下午 [Thread: http-nio-8080-exec-4][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 16:15:48 下午 [Thread: http-nio-8080-exec-4][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@645e623f]
+2020-11-17 16:27:43 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:105) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-11-17 16:27:43 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.Msg matches criteria [is assignable to Object]
+2020-11-17 16:27:43 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.StockUser matches criteria [is assignable to Object]
+2020-11-17 16:27:43 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.TMsg matches criteria [is assignable to Object]
+2020-11-17 16:27:43 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.UserInfo matches criteria [is assignable to Object]
+2020-11-17 16:27:43 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:288) ]
+DEBUG:Checking to see if class com.jmlt.kaifa.entity.VisitLog matches criteria [is assignable to Object]
+2020-11-17 16:33:57 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 16:33:57 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53b95ee4] was not registered for synchronization because synchronization is not active
+2020-11-17 16:33:59 下午 [Thread: http-nio-8080-exec-2][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 16:33:59 下午 [Thread: http-nio-8080-exec-2][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6096195e] was not registered for synchronization because synchronization is not active
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@2005064796 wrapping com.mysql.cj.jdbc.ConnectionImpl@6f35fe0d] will not be managed by Spring
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@795668743 wrapping com.mysql.cj.jdbc.ConnectionImpl@7f60415d] will not be managed by Spring
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: select * from user_info where serial_number = ?
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 15014343530(String)
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.findBySerialNumber >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==      Total: 1
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6096195e]
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53b95ee4]
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Creating a new SqlSession
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b1df80d] was not registered for synchronization because synchronization is not active
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cf9a71c] was not registered for synchronization because synchronization is not active
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@2006236360 wrapping com.mysql.cj.jdbc.ConnectionImpl@6f35fe0d] will not be managed by Spring
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:JDBC Connection [HikariProxyConnection@420616482 wrapping com.mysql.cj.jdbc.ConnectionImpl@7f60415d] will not be managed by Spring
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: UPDATE user_info SET confirm_time = ?, is_consent = ? WHERE serial_number = ?
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==>  Preparing: UPDATE user_info SET confirm_time = ?, is_consent = ? WHERE serial_number = ?
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 20201117163357(String), 0(String), 15014343530(String)
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:==> Parameters: 20201117163359(String), 0(String), 15014343530(String)
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-2][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b1df80d]
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:com.jmlt.kaifa.mapper.UserInfoMapper.update >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:137) ]
+DEBUG:<==    Updates: 1
+2020-11-17 16:34:00 下午 [Thread: http-nio-8080-exec-1][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.logging.Logger.debug(Logger.java:49) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cf9a71c]

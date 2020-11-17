@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmlt.kaifa.mapper.StockUserMapper">
+    <resultMap id="stockResultMap" type="com.jmlt.kaifa.entity.StockUser" >
+        <result column="stock_id" property="stockId" />
+        <result column="serial_number" property="serialNumber" />
+    </resultMap>
+    <select id="findById" resultMap="stockResultMap">
+        select * from stock_user  where stock_id = #{id}
+    </select>
+
+    <select id="findBySerialNumber" resultMap="stockResultMap">
+        select * from stock_user  where serial_number = #{serialNumber}
+    </select>
+    <select id="findAll" resultMap="stockResultMap">
+        select * from user
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyColumn="stock_id" keyProperty="stockId" >
+		INSERT INTO stock_user(
+			stock_id,
+			serial_number
+
+		) VALUES (
+			#{stockId},
+			#{serialNumber}
+
+		)
+	</insert>
+</mapper>

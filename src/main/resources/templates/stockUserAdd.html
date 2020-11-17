@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+
+    <title>江门联通</title>
+    <script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <script th:src="@{/js/common.js}"></script>
+    <script th:src="@{/js/jquery.validate.min.js}"></script>
+    <style>
+    img{
+    width:100%;
+    height:auto;
+    }
+    .title_box{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+    }
+    .title_left{width: 0%;height: auto;font-size: 20px;}
+    .title_right{width: 100px;height: 40px;border: 1px solid green;float: right;}
+    .title_box input{width: 100%;height: 30px}
+    span{
+        color:blue;
+        font-size: 15px;
+    }
+    </style>
+</head>
+<body >
+
+
+<form action="/sdgdrh/rhrehrt"  method="post" id="loginForm" onsubmit="return test()">
+
+<div >
+<!--     <img th:src="@{/js/images/image1.jpg}" width="350px" height="150px" >-->
+<!--    <img th:src="@{/js/images/image2.jpg}" width="350px" height="200px">-->
+    <img th:src="@{/js/images/image1.jpg}"  >
+    <img th:src="@{/js/images/image2.jpg}">
+    <div class="title_box">
+<!--        <div class="title_left"></div>-->
+<!--      <label>号码：</label> <input style="width: 290px;height: 25px" id="serialNumber" class="phoneNumber" name="serialNumber" type="text" maxlength="11" minlength="11" placeholder="请输入联通手机号码">-->
+<!--        <label class="title_left" >号码:</label> -->
+        <input   id="serialNumber" class="serialNumber" name="serialNumber" type="text" maxlength="11" minlength="11" placeholder="请输入联通手机号码查询办理资格">
+<!--
+  style="width: 83.1%;height: 25px"-->
+<!--        <div class="title_right"></div>-->
+    </div>
+
+<!--    <button id="submit" type="submit" style="width: 350px">提交</button>-->
+   <button id="submit" type="submit"  style="width: 100%">提交</button>
+<!--    <button id="submit" onclick="test()" type="button">提交</button>-->
+
+</div>
+</form>
+
+
+</body>
+
+
+
+<script type="text/javascript">
+    function test() {
+
+                var serial_number = $("#serialNumber").val();
+                var red =/^[1][3|4|5|6|7|8|9][0-9]{9}$/;
+
+                if(serial_number ===null || serial_number  ==='' ){
+                    alert("请您正确输入手机号码");
+
+                    return false
+                }else {
+
+                    if (!red.test(serial_number)) {
+                        alert("手机号码有误，请重填");
+                        return false;
+                    }
+
+                }
+        return true;
+
+    }
+
+</script>
+</html>
